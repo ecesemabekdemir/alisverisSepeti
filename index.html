@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alışveriş Sepeti</title>
+  <link rel="stylesheet" href="assets/css/sepet.css">
+  <script src="assets/js/sepet.js" defer></script>
+</head>
+<body>
+  <div class="container">
+    <header class="blogHeader" >
+      <h1>Ürün Ekleme Sayfası</h1>
+      <button id="addBtn">Ekle</button>
+    </header>
+    <div class="productsArray" id="basketContainer"></div>  
+    <dialog id="modal">
+    <h2 class="modelAddNew">Blog Ekle</h2>
+    <h2 class="modelEdit"></h2>
+    <form  method="dialog" autocomplete="off" id="sepetForm">
+      <label for="name">Ürün İsmi:</label><input class="productName" type="text" name="name" />
+      <label for="category">Kategori:</label>
+      <select name="category" id="category">
+        <option value="technology">Teknoloji</option>
+        <option value="textile">Tekstil</option>
+        <option value="cosmetic">Kozmetik</option>
+        <option value="clothes">Giyim</option>
+        <option value="book">Kitap</option>
+      </select>
+      <label for="color">Rengi:</label><input class="productRenk" type="text" name="color" />
+      <label for="price">Fiyatı:</label><input class="productPrice" type="number" name="price" />
+      <button class="modelAddNew">Ürün Ekle</button> 
+      <button  class="modelEdit">Düzenle</button>
+      <button id="vazgec" type="button" onclick="sepetForm.reset();modal.close();">Vazgeç</button>
+      <input type="hidden" name="id" value="">
+    </form>
+  </dialog>
+  </div>
+</body>
+</html>

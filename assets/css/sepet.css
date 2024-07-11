@@ -1,0 +1,120 @@
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.blogHeader {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  border-radius: 5px;
+}
+
+.blogHeader h1 {
+  font-size: 24px;
+  color: #FFF;
+}
+
+.blogHeader button {
+  background-color: #ff6f61;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-top: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.blogHeader button:hover {
+  background-color: #ff3f3f;
+}
+
+#modal {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 20px;
+  width: 300px;
+  max-width: 90%;
+  margin: 20px auto;
+}
+
+#sepetForm {
+  display: flex;
+  flex-direction: column;
+}
+
+#sepetForm label {
+  margin-top: 10px;
+}
+
+#sepetForm input,select {
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+#sepetForm button {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  margin-top: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+#sepetForm button:hover {
+  background-color: #555;
+}
+
+.editControls a svg {
+  width: 16px;
+  height: 16px; 
+}
+
+li {
+  list-style: none;
+}
+
+.productsArray {
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  gap: 27px;
+}
+
+.product {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+.product li {
+  list-style: none;
+}
+
+.productBox {
+  display: flex;
+  justify-content: space-between;
+  background-color: #f9f9f9;
+  padding: 18px;
+  gap: 5px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
